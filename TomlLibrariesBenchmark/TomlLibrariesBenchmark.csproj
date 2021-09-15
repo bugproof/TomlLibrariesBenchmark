@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+    <PropertyGroup>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>portable</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Optimize>true</Optimize>
+        <Configuration>Release</Configuration>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="BenchmarkDotNet" Version="0.12.1" />
+        <PackageReference Include="BenchmarkDotNet.Diagnostics.Windows" Version="0.12.1" />
+        <PackageReference Include="Nett" Version="0.15.0" />
+        <PackageReference Include="Samboy063.Tomlet" Version="2.0.0" />
+        <PackageReference Include="Tomlyn" Version="0.1.2" />
+        <PackageReference Include="Tommy" Version="2.0.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Tomen\Tomen.csproj" />
+      <ProjectReference Include="..\Tomen\Tomen\Tomen.csproj" />
+    </ItemGroup>
+</Project>
