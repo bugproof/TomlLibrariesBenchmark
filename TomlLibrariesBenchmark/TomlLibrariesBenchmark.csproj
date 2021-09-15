@@ -20,7 +20,6 @@
         <PackageReference Include="Tommy" Version="2.0.0" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\Tomen\Tomen.csproj" />
       <ProjectReference Include="..\Tomen\Tomen\Tomen.csproj" />
     </ItemGroup>
 </Project>
