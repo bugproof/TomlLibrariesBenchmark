@@ -1,8 +1,8 @@
-|      Method |      Mean |    Error |   StdDev |   Gen 0 |  Gen 1 | Allocated |
+|      Method |      Mean |    Error |   StdDev |    Gen0 |   Gen1 | Allocated |
 |------------ |----------:|---------:|---------:|--------:|-------:|----------:|
-|  TomenParse |  15.40 us | 0.202 us | 0.189 us |  3.1128 | 0.0916 |     26 KB |
-|  TommyParse |  18.52 us | 0.131 us | 0.122 us |  2.0447 | 0.0610 |     17 KB |
-| TomlynParse |  69.46 us | 1.375 us | 1.219 us |  6.4697 | 0.8545 |     54 KB |
-|   NettParse |  82.95 us | 0.578 us | 0.483 us | 16.8457 | 1.3428 |    138 KB |
-| TomletParse | 143.10 us | 1.220 us | 1.082 us |  5.6152 |      - |     46 KB |
+|  TomenParse |  14.32 us | 0.177 us | 0.165 us |  3.1281 | 0.0610 |  25.59 KB |
+|  TommyParse |  16.97 us | 0.316 us | 0.310 us |  2.0447 | 0.0305 |   16.7 KB |
+| TomlynParse |  63.50 us | 1.233 us | 1.371 us |  6.2256 | 0.7324 |   51.5 KB |
+|   NettParse |  85.18 us | 1.684 us | 2.719 us | 16.8457 | 1.0986 | 137.63 KB |
+| TomletParse | 140.66 us | 2.646 us | 2.475 us |  5.3711 |      - |  44.23 KB |
 
