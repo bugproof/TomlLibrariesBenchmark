@@ -74,13 +74,6 @@ hosts = [
         }
 
         [Benchmark]
-        public object TomenParse()
-        {
-            var table = Tomen.Tomen.ReadString(_tomlData);
-            return table;
-        }
-        
-        [Benchmark]
         public object TomletParse()
         {
             return new Tomlet.TomlParser().Parse(_tomlData);
