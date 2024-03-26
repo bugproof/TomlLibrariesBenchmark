@@ -1,8 +1,15 @@
-|      Method |      Mean |    Error |   StdDev |    Gen0 |   Gen1 | Allocated |
-|------------ |----------:|---------:|---------:|--------:|-------:|----------:|
-|  TomenParse |  14.32 us | 0.177 us | 0.165 us |  3.1281 | 0.0610 |  25.59 KB |
-|  TommyParse |  16.97 us | 0.316 us | 0.310 us |  2.0447 | 0.0305 |   16.7 KB |
-| TomlynParse |  63.50 us | 1.233 us | 1.371 us |  6.2256 | 0.7324 |   51.5 KB |
-|   NettParse |  85.18 us | 1.684 us | 2.719 us | 16.8457 | 1.0986 | 137.63 KB |
-| TomletParse | 140.66 us | 2.646 us | 2.475 us |  5.3711 |      - |  44.23 KB |
+```
+BenchmarkDotNet v0.13.12, Windows 11 (10.0.22631.3296/23H2/2023Update/SunValley3)
+AMD Ryzen 9 7950X3D, 1 CPU, 32 logical and 16 physical cores
+.NET SDK 8.0.103
+  [Host]     : .NET 8.0.3 (8.0.324.11423), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+  DefaultJob : .NET 8.0.3 (8.0.324.11423), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+```
 
+
+| Method      | Mean      | Error     | StdDev    | Gen0   | Gen1   | Allocated |
+|------------ |----------:|----------:|----------:|-------:|-------:|----------:|
+| TommyParse  |  7.329 us | 0.0792 us | 0.0741 us | 0.3128 |      - |  15.67 KB |
+| TomlynParse | 27.086 us | 0.2190 us | 0.1942 us | 1.0376 | 0.1221 |  51.47 KB |
+| NettParse   | 35.401 us | 0.3405 us | 0.3019 us | 2.7466 | 0.1221 | 136.81 KB |
+| TomletParse | 63.994 us | 0.7469 us | 0.6987 us | 0.8545 |      - |  44.23 KB |
